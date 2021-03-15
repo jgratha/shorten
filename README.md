@@ -10,6 +10,7 @@ Open a terminal and do the following steps.
 ```bash
 cd <your-python-projects-folder>
 git clone git@github.com:jgratha/shorten.git
+cd shorten
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
