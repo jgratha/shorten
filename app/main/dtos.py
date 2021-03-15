@@ -10,7 +10,7 @@ class ShortenRequestDto(BaseModel):
 
 
 class ShortcodeStatsDto(BaseModel):
-    created: Optional[datetime]
+    created: datetime
     lastRedirect: Optional[datetime]
     redirectCount: int
 
