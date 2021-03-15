@@ -24,6 +24,3 @@ def generate_shortcode() -> str:
 
 def is_valid_url(url_str: str):
     return bool(url_pattern.match(url_str))
-
-def url_ends_with_slash_shortcode(url_str: str, shortcode_str: str) -> bool:
-    url_str.endswith(shortcode_str)
