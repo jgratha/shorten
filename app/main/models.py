@@ -10,9 +10,7 @@ class Url(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     url = db.Column(db.String(2000), unique=True)
 
-    shortcodes = db.relationship(
-        'Shortcode', back_populates='url'
-    )
+    shortcodes = db.relationship('Shortcode', back_populates='url')
 
     def __repr__(self):
         return f'Url: {self.url}'
