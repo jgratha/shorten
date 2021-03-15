@@ -1,7 +1,7 @@
 # Shorten
 
 Hi there!
-Shorten is webservice which can shorten urls like TinyURL and bit.ly
+Shorten is a webservice which can shorten urls like TinyURL and bit.ly
 
 ## Installation
 
@@ -34,14 +34,14 @@ flask run
 
 ## What would I have added with more time?
 
-- Some measures to prevent redirect loops
-- Some investigation to prevent generating existing shortcodes
+- Some investigation and measures to prevent redirect loops
+- Some investigation and a solution to prevent generating existing shortcodes
 
 ## Sources used
 
-- The project structure is inspired by the Flask mega tutorial by Miguel Grinberg
-- The shortcode generator uses
-- The shortcode regex validator was inspired by
-- The url validator was inspired by, the django implentation
-- The errorhandler was inspired by 
+- The project structure is inspired by [the Flask mega tutorial by Miguel Grinberg]()
+- The shortcode generator uses [the shortuuid package](https://github.com/skorokithakis/shortuuid)
+- The shortcode regex validator was inspired by [this stackoverflow answer](https://stackoverflow.com/questions/57011986/how-to-check-that-a-string-contains-only-a-z-a-z-and-0-9-characters/57012038)
+- The url validator was inspired by [this stackoverflow answer](https://stackoverflow.com/questions/7160737/how-to-validate-a-url-in-python-malformed-or-not)
+- The errorhandler was inspired by https://flask.palletsprojects.com/en/1.1.x/errorhandling/ and https://flask.palletsprojects.com/en/1.1.x/patterns/apierrors/
  
