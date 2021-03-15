@@ -44,5 +44,5 @@ flask run
 - The shortcode generator uses [the shortuuid package](https://github.com/skorokithakis/shortuuid)
 - The shortcode regex validator is inspired by [this stackoverflow answer](https://stackoverflow.com/questions/57011986/how-to-check-that-a-string-contains-only-a-z-a-z-and-0-9-characters/57012038)
 - The url validator is inspired by [this stackoverflow answer](https://stackoverflow.com/questions/7160737/how-to-validate-a-url-in-python-malformed-or-not)
-- The errorhandler is inspired by https://flask.palletsprojects.com/en/1.1.x/errorhandling/ and https://flask.palletsprojects.com/en/1.1.x/patterns/apierrors/
+- The errorhandler is inspired by [this article](https://flask.palletsprojects.com/en/1.1.x/errorhandling/) and [that article](https://flask.palletsprojects.com/en/1.1.x/patterns/apierrors/)
  
