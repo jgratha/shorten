@@ -2,7 +2,6 @@ from flask import request, jsonify, redirect
 
 from app.main import bp, exceptions, repository, helpers
 from app.main.dtos import ShortenRequestDto
-from app.main.helpers import is_valid_shortcode, is_valid_url
 
 
 @bp.route('/shorten', methods=['POST'])
@@ -12,11 +11,11 @@ def shorten():
 
     if not dto.url:
         raise exceptions.UrlNotPresentException
-    if not is_valid_url(dto.url):
+    if not helpers.is_valid_url(dto.url):
         raise exceptions.UrlInvalidException
 
     if dto.shortcode:
-        if not is_valid_shortcode(dto.shortcode):
+        if not helpers.is_valid_shortcode(dto.shortcode):
             raise exceptions.ShortcodeInvalidException
         if repository.does_shortcode_exist(dto.shortcode):
             raise exceptions.ShortcodeAlreadyInUseException
@@ -36,7 +35,7 @@ def get_url(shortcode):
         raise exceptions.ShortcodeNotFoundException
 
     url = repository.get_url_for_shortcode(shortcode_model)
-    assert is_valid_url(url)
+    assert helpers.is_valid_url(url)
 
     repository.register_redirect(shortcode_model)
 
