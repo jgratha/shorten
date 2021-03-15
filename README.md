@@ -32,7 +32,7 @@ To run the app execute the following line in the project folder.
 flask run
 ```
 
-## What would I have added with more time?
+## Future work
 
 - Some investigation and measures to prevent redirect loops
 - Some investigation and a solution to prevent generating existing shortcodes
