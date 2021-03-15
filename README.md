@@ -18,7 +18,7 @@ flask db upgrade
 
 ## Running tests
 
-To run the unittest execute the following line inside the project folder.
+To run the unittests execute the following line inside the project folder.
 
 ```bash
 python -m unittest discover tests
