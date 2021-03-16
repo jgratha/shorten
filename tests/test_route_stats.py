@@ -44,8 +44,8 @@ class RouteShortenTest(unittest.TestCase):
         response = self.client.get('/abc123/stats')
 
         assert response.status_code == 200
-        assert response.json['created'] == '2021-0101T00:00:00.000Z'
-        assert response.json['lastRedirect'] == '2021-0103T00:00:01.123Z'
+        assert response.json['created'] == '2021-01-01T00:00:00.000Z'
+        assert response.json['lastRedirect'] == '2021-01-03T00:00:01.123Z'
         assert response.json['redirectCount'] == 2
 
     def test_no_stats_successful(self):
@@ -64,7 +64,7 @@ class RouteShortenTest(unittest.TestCase):
         response = self.client.get('/abc123/stats')
 
         assert response.status_code == 200
-        assert response.json['created'] == '2021-0101T00:00:00.000Z'
+        assert response.json['created'] == '2021-01-01T00:00:00.000Z'
         assert response.json['lastRedirect'] == None
         assert response.json['redirectCount'] == 0
 
